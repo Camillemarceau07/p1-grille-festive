@@ -1,0 +1,112 @@
+/**
+ * Typographie responsive (Mobile First)
+   ========================================================================
+ * Les valeurs de taille de police suggérées ici sont à titre indicatif.
+ * À ajuster selon la direction visuelle et le choix de polices de caractères.
+ *
+ * @author Camille Marceau <2063511@csfoy.ca>
+ *
+ * TABLE DES MATIÈRES
+ * Polices
+ * Base décimale
+ * Hiérarchie responsive
+ *
+ *
+ * Doc des points de rupture :
+ * ==========================================================================
+ * Écran étroit : de 0 à 599px
+ * point de rupture: 600px
+ *
+ * Écran moyen : de 600 à 799px
+ * point de rupture: 800px
+ *
+ * Écran large : 800px et +
+ */
+
+/* Polices */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+}
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Base décimale */
+html{
+    font-size: 62.5%;
+}
+
+body {
+    /* 16px pour toutes les largeurs d'écran */
+    font-size: 1.6rem;
+    /* facteur multiplicateur de la taille de la police 1.375x16 = 22 */
+    line-height: 1.5;
+    font-weight: 300;
+}
+@media (min-width: 600px) {
+    body {
+        line-height: 1.5;
+    }
+}
+@media (min-width: 800px) {
+    body {
+        line-height: 1.75;
+    }
+}
+
+
+/* Hiérarchie responsive : plus proche = plus petit  &  plus loin = plus grand */
+h1, .h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 100%;
+}
+@media (min-width: 600px) {
+    h1, .h1 {
+        font-size: 6rem;
+        line-height: 150%;
+    }
+}
+
+h2, .h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    font-weight: 700;
+}
+@media (min-width: 600px) {
+    h2, .h2 {
+        font-size: 3.1rem;
+    }
+}
+
+blockquote {
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+@media (min-width: 600px) {
+    blockquote {
+        font-size: 2.6rem;
+    }
+}
+
+.auteur {
+    font-weight: 700;
+}
+
+.entete__categorie {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+}
+@media (min-width: 600px) {
+    .entete__categorie {
+        font-size: 3.1rem;
+        transform: rotate(-90deg);
+    }
+}

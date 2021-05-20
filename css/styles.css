@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/**
+ * @author Camille Marceau <2063511@csfoy.ca>
+ *
+ * TABLE DES MATIÈRES
+ *
+ * Reset / Normalize (link)
+ * Utilitaires
+ * Charte typographique
+ * Système de grille fluide
+ * Grille de mise en page
+    * Styles de base
+    * Header
+    * Entête
+    * Intro
+    * Aller dans l'excès pour se sentir vivante
+    * Photo bleed
+    * Comprendre les raisons derrière la dépression
+    * Mort et résurrection du phénix
+    * Footer
+ ***
+ ***
+ *
+ */
+
+/* Utilitaires
+   ========================================================================== */
+@import url(utilitaires.css);
+
+/* Charte typographique
+   ========================================================================== */
+@import url(typo.css);
+
+/* Système de grille fluide
+   ========================================================================== */
+@import url(grille.css);
+
+/* Grille de mise en page
+   ========================================================================== */
+
+/******* Styles de base *******
+==============================*/
+:root {
+    --gris: #313131;
+    --beige: #F3EAE0;
+    --orange: #ef5a30;
+    --padding-left-right: 0 2rem 0 2rem;
+}
+
+body {
+    color: var(--gris);
+    background-color: var(--beige);
+}
+
+blockquote {
+    border-left : var(--gris) solid 5px;
+    padding-left: 1.5rem;
+    margin: 7rem 2rem 7rem 2rem;
+}
+
+/******* Header *******
+======================*/
+header {
+    width: 100%;
+    top: 0;
+    background-color: var(--gris);
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+/******* Entête *******
+======================*/
+.entete {
+    padding-bottom: 2rem;
+}
+
+.entete__categorie {
+    background-color: var(--gris);
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.entete__titre, .entete__auteur {
+    padding: var(--padding-left-right);
+}
+
+/******* Intro *******
+=====================*/
+.intro {
+    padding: var(--padding-left-right);
+    margin-bottom: 8rem;
+}
+
+.intro__photo {
+    width: 100%;
+}
+
+.intro__texte {
+    line-height: 180%;
+}
+
+/******* Aller dans l'excès pour se sentir vivante *******
+=========================================================*/
+.excesPourSeSentirVivante {
+    padding: var(--padding-left-right);
+}
+.pochettePhoenix img, .pochetteDaddy img {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+/******* Photo bleed *******
+===========================*/
+.bleed img {
+    width: 100%;
+}
+
+/******* Comprendre les raisons derrière la dépression *******
+=============================================================*/
+.raisonDerriereDepression {
+    padding: var(--padding-left-right);
+    margin-top: 5rem;
+}
+
+/******* Mort et résurrection du phénix *******
+=============================================================*/
+.mortEtResurrection {
+    padding: var(--padding-left-right);
+    margin-bottom: 10rem;
+}
+
+.mortEtResurrection img {
+    margin-bottom: 1rem;
+}
+
+.mortEtResurection_texte blockquote {
+    margin: 4rem 2rem 4rem 2rem;
+}
+
+/******* Footer *******
+======================*/
+footer {
+    width: 100%;
+    background-color: var(--gris);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover, footer a:focus {
+    color: var(--orange);
+}
+
+.bouton {
+    text-decoration: none;
+    background-color: var(--beige);
+    color: var(--gris);
+    padding: 2rem;
+    border: 2px solid var(--gris);
+    box-shadow: 5px 5px 0px #FFF;
+}
+
+.bouton:hover {
+    background-color: var(--orange);
+    color: #fff;
+    transition: background-color 1s;
+    box-shadow: none;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+footer p:first-child {
+    margin: 5rem;
+}
