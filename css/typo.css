@@ -66,20 +66,21 @@ h1, .h1 {
 }
 @media (min-width: 600px) {
     h1, .h1 {
-        font-size: 6rem;
-        line-height: 150%;
+        font-size: 5.5rem;
+        line-height: 141.5%;
     }
 }
 
 h2, .h2 {
     font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: 0.7rem;
-    font-weight: 700;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    line-height: 150%
 }
 @media (min-width: 600px) {
     h2, .h2 {
-        font-size: 3.1rem;
+        font-size: 2.4rem;
     }
 }
 
@@ -98,6 +99,10 @@ blockquote {
     font-weight: 700;
 }
 
+.sources {
+    font-weight: 600;
+}
+
 .entete__categorie {
     font-size: 2rem;
     font-weight: 600;
@@ -108,5 +113,15 @@ blockquote {
     .entete__categorie {
         font-size: 3.1rem;
         transform: rotate(-90deg);
+    }
+}
+
+.intro__texte {
+    font-size: 1.6rem;
+}
+
+@media (min-width: 600px) {
+    .intro__texte {
+        font-size: 2rem;
     }
 }

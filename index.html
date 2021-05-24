@@ -2,10 +2,24 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Phœnix, un premier album libérateur pour Charlotte Cardin">
+    <meta name="keywords"
+          content="Tim Actuel, Charlotte Cardin, Pheonix, Musique, Techniques d’intégration multimédia, Cégep de Sainte-Foy">
+    <meta name="author" content="Radio-Canada">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#ef5a30">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Tim Actu - Phœnix, un premier album libérateur pour Charlotte Cardin</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+<!--    <link rel="stylesheet" href="css/normalize.css">-->
+<!--    <link rel="stylesheet" href="css/styles.css">-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
 <header role="banner">
@@ -16,16 +30,20 @@
 </header>
 <main role="main">
     <div class="entete">
-        <p class="entete__categorie">Musique</p>
+        <div class="bandeCategorie">
+            <p class="entete__categorie">Musique</p>
+        </div>
         <h1 class="entete__titre">Phœnix, un premier album libérateur pour Charlotte Cardin</h1>
         <p class="entete__auteur">
             <span class="auteur">Radio-Canada</span><br>
             13 février 2021
         </p>
     </div>
-    <div class="intro rangee">
-        <img class="intro__photo cols_6_de_12" src="images/charlotte_intro_590.jpg"
-             alt="Charlotte Cardin qui regarde au dessus de son épaule">
+    <div class="intro rangee conteneur">
+        <div class="intro__photo cols_6_de_12">
+            <img src="images/charlotte_intro_590.jpg"
+                 alt="Charlotte Cardin qui regarde au dessus de son épaule">
+        </div>
         <div class="cols_6_de_12">
             <p class="intro__texte">
                 Après deux microalbums – Big Boy (2016) et Main Girl (2017) –
@@ -45,7 +63,7 @@
             </p>
         </div>
     </div>
-    <div class="excesPourSeSentirVivante">
+    <div class="excesPourSeSentirVivante conteneur">
         <picture class="pochettePhoenix">
             <source
                     media="(max-width: 600px)"
@@ -100,29 +118,32 @@
             sortes de relations fortes, que ce soit les dépendances ou les relations familiales.»
         </blockquote>
     </div>
+    <div class="parallax"></div>
     <picture class="bleed">
         <source
                 media="(max-width: 600px)"
                 srcset="images/charlotte_bleed_600.jpg">
-        <source
-                media="(min-width: 601px)"
-                srcset="images/charlotte_bleed_1440.jpg">
+        <!--        <source-->
+        <!--                media="(min-width: 601px)"-->
+        <!--                srcset="images/charlotte_bleed_1440.jpg">-->
         <img src="images/charlotte_bleed_600.jpg"
              alt="Charlotte Cardin dans un grand veston rouge">
     </picture>
-    <div class="cols_6_de_12 raisonDerriereDepression">
-        <h2>Comprendre les raisons derrière la dépression</h2>
-        <p>
-            Dans un élan de candeur inattendu, Charlotte Cardin a également parlé d’un
-            passage peu connu de sa jeunesse, qu’elle traîne toujours avec elle.
-        </p>
-        <p>
-            <q>C’est quelque chose que peu de gens savent, mais quand j’étais très jeune,
-                j’ai fait une dépression. J’ai vraiment vécu des moments super sombres. Et
-                je n’ai jamais vraiment pris le temps de regarder en arrière et de comprendre pourquoi</q>,
-            explique-t-elle. Sans aller dans les détails de l’épisode en question, la chanteuse
-            explique que les angoisses de cette époque sont revenues la hanter dans les dernières années.
-        </p>
+    <div class="conteneur rangee">
+        <div class="cols_6_de_12 raisonDerriereDepression">
+            <h2>Comprendre les raisons derrière la dépression</h2>
+            <p>
+                Dans un élan de candeur inattendu, Charlotte Cardin a également parlé d’un
+                passage peu connu de sa jeunesse, qu’elle traîne toujours avec elle.
+            </p>
+            <p>
+                <q>C’est quelque chose que peu de gens savent, mais quand j’étais très jeune,
+                    j’ai fait une dépression. J’ai vraiment vécu des moments super sombres. Et
+                    je n’ai jamais vraiment pris le temps de regarder en arrière et de comprendre pourquoi</q>,
+                explique-t-elle. Sans aller dans les détails de l’épisode en question, la chanteuse
+                explique que les angoisses de cette époque sont revenues la hanter dans les dernières années.
+            </p>
+        </div>
     </div>
     <div class="conteneur rangee">
         <blockquote class="cols_10_de_12">
@@ -130,8 +151,10 @@
             ne savais pas vraiment pourquoi et c’est quelque chose que je découvre encore.»
         </blockquote>
     </div>
-    <div class="rangee mortEtResurrection">
-        <img class="cols_6_de_12" src="images/charlotte_560.jpg" alt="Charlotte Cardin devant un couché de soleil">
+    <div class="conteneur rangee mortEtResurrection">
+        <div class="cols_6_de_12">
+            <img src="images/charlotte_560.jpg" alt="Charlotte Cardin devant un couché de soleil">
+        </div>
         <div class="cols_6_de_12 mortEtResurection_texte">
             <h2>Mort et résurrection du phénix</h2>
             <p>
@@ -164,9 +187,13 @@
 </main>
 <footer role="contentinfo">
     <p><a class="bouton" href="https://www.charlottecardin.com">Visiter le site web de Charlotte Cardin</a></p>
-    <p>Source de l'article&nbsp;: <a href="https://ici.radio-canada.ca/nouvelle/1770630/charlotte-cardin-phoenix-premier-album-meaningless">Radio-Canada</a></p>
-    <p>Source des images&nbsp;: <a href="https://www.facebook.com/charlottecardinofficial">Page facebook de Charlotte Cardin</a></p>
-    <p><small>Réalisation de Camille Marceau pour le cours Intégration II, en Techniques d’intégration multimédia, Cégep de Sainte-Foy</small></p>
+    <p><span class="sources">Source de l'article&nbsp;</span>: <a
+            href="https://ici.radio-canada.ca/nouvelle/1770630/charlotte-cardin-phoenix-premier-album-meaningless">Radio-Canada</a>
+    </p>
+    <p><span class="sources">Source des images&nbsp;</span>: <a href="https://www.facebook.com/charlottecardinofficial">Page
+        facebook de Charlotte Cardin</a></p>
+    <p><small>Réalisation de Camille Marceau pour le cours Intégration II, en Techniques d’intégration multimédia, Cégep
+        de Sainte-Foy</small></p>
 </footer>
 </body>
 </html>
